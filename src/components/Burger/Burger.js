@@ -4,7 +4,8 @@ import BurgerIngredient from "../BurgerIngredient/BurgerIngredient";
 import "./Burger.css";
 
 const Burger = () => {
-  const {/* Seçilmiş ürünlerin olduğu array */} = useContext(HamburgerContext);
+  /* Seçilmiş ürünlerin olduğu array */
+  const {selectedIngredients} = useContext(HamburgerContext);
   return (
     <div className="wrapper">
       <div className="bread-top" />

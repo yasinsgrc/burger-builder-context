@@ -5,10 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import HamburgerContextProvider from "./context/HamburgerContext";
 
+
+
+/* Uygulamayı context provider ile sarmalayınız */
 ReactDOM.render(
-  <React.StrictMode>
-      {/* Uygulamayı context provider ile sarmalayınız */}
+  <React.StrictMode>         
+      <HamburgerContextProvider>
       <App />
+      </HamburgerContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

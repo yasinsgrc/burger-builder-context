@@ -5,8 +5,10 @@ import "./Menu.css";
 const Menu = () => {
   const {
     /* Context'te bulunan ihtiyacımız olan state */
-    setSelectedIngredients,
     getCalculatedTotalPrice,
+    setSelectedIngredients,
+    selectedIngredients,
+    
   } = useContext(HamburgerContext);
 
   const handleAddIngredient = (ingredient) => {
@@ -26,7 +28,7 @@ const Menu = () => {
   };
 
   const handleRemoveIngredient = (ingredient) => {
-    let ingredients = [ /* Seçilen malzemeler */];
+    let ingredients = [ /* Seçilen malzemeler */...selectedIngredients];
 
     const existIngredient = ingredients.find(
       (item) => item.name === ingredient.name

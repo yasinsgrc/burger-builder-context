@@ -17,3 +17,9 @@
   border-left: 1px;
   border-right: 1px;
 }
+.chicken{
+  height: 30px;
+  background:yellow;
+  border-radius: 10px;
+
+}
